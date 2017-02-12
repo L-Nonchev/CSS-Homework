@@ -1,0 +1,48 @@
+@CHARSET "UTF-8";
+
+#container {
+	width: 600px;
+	heigh: 600px;
+	margin: 0 auto;
+}
+
+header {
+	margin-bottom: 5px;
+}
+
+header #header-section{
+	width: 100%;
+	height: 100px;
+	background-color: #497e7e;
+}
+
+main {
+	display: inline-block;
+	width: 100%;
+	margin-bottom: -3px;
+}
+
+main #left-main-section	{
+	background-color: #d700ac;
+	width: 200px;
+	height: 390px;
+	float: left;
+	margin-right: 5px;
+}
+
+main #right-main-section {
+	background-color: #49ff00;
+	width: 395px;
+	height: 390px;
+	float: left;
+}
+
+footer {
+	margin-top: 5px;
+}
+
+footer #footer-section {
+	width: 100%;
+	height: 100px;
+	background-color: #0049ff;
+}

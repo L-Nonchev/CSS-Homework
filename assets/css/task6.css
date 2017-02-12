@@ -1,0 +1,148 @@
+@CHARSET "UTF-8";
+body{
+	font-family: Arial, sans-serif;
+}
+#container {
+	box-sizing:border-box;
+	width: 1170px;
+	margin-left: 10em;
+}
+
+header {
+	background-color:#9b6600;
+	color: white;
+}
+
+header #header-section h1 {	
+	padding: 1em;
+	font-size: 1.8em;
+}
+
+header #header-section #header-top-p {
+	padding-left: 2em;
+	padding-right: 2em;	
+}
+
+header #header-section #header-bottom-p {
+	padding-left: 2em;
+	padding-right: 2em;
+	padding-bottom: 2em;
+}
+main {
+	display: inline-block;
+	width: 100%;
+}
+
+main #left-aside {
+	background-color: #58201f;
+	width: 15%;
+	height: 450px;
+	float: left;
+	margin-bottom: -3px;
+}
+
+main #left-aside nav {
+	background-color: #64332f;
+	width: 90%;
+	height: 16em;
+	color: white;
+}
+
+main #left-aside nav h2 {
+	box-sizing:border-box;
+	padding: 1em;
+	font-size: 1.5em;
+}
+main #left-aside nav ul  {
+	box-sizing:border-box;
+	list-style:disc;
+	padding-left:2.5em;
+	list-style:disc;
+	color: white;
+	
+}
+
+main #left-aside nav ul li a {
+	color: white;
+	font-size: 0.8em;
+	text-decoration: none;
+	display: inline-block;
+	width: 100%;
+	height: 2em;
+	padding-top: 1em;
+}
+main #main-center-section  {
+	ox-sizing:border-box;
+	background-color: #ffffcd;
+	width: 70%;
+	height: 450px;
+	float: left;
+	margin-bottom: -3px;
+	overflow: auto;
+}
+		 
+main #main-center-section article h1 {
+	box-sizing:border-box;
+	padding: 1em;
+	font-size: 1.5em;
+	font-weight: bolder;
+}
+
+main #main-center-section article p {
+	box-sizing:border-box;
+	padding: 0.8em 2em;
+	line-height: 1.5em;
+	
+}
+
+main #right-aside {
+	background-color: #87874b;
+	box-sizing:border-box;
+	width: 15%;
+	height: 450px;
+	float: left;
+	margin-bottom: -3px;
+	
+}
+main #right-aside #right-aside-section{
+	background-color: #989665;
+}
+
+main #right-aside #right-aside-section h2 {
+	padding: 1em;
+	font-size: 1.5em;
+	font-weight:bolder;
+	text-align: right;
+}
+
+#container-for-footer {
+	width: 1170px;
+	margin-left: 2em;
+}
+
+#container-for-footer footer {
+	background-color: #656565;
+	height: 1.5em;
+}
+
+#container-for-footer footer p {
+	box-sizing:border-box;
+	font-size: 0.8em;
+	text-align: center;
+	padding-top: 0.8em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
