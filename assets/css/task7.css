@@ -1,0 +1,359 @@
+@CHARSET "UTF-8";
+
+body {
+	font-family: 'Arial, Helvetica, Verdana', sans-serif;
+	background-image: url("../img/task7BG.jpg");
+	background-size: cover;
+}
+
+#container {
+	background-color: #1f2324;
+	box-sizing: border-box;
+	width: 1170px;
+	border: 1px solid khaki;
+	margin: 0 auto;
+}
+
+header {
+	display: inline-block;
+	width: 100%;
+	margin-bottom: -3px;
+}
+
+header>.headre-section {
+	box-sizing: border-box;
+	padding-left: 1em;
+	color: white;
+	font-size: 3em;
+	float: left;
+	width: 20%;
+}
+
+header>.header-section>h1 {
+	text-align: center;
+	font-weight: bolder;
+}
+
+header>.basic-menu {
+	box-sizing: border-box;
+	height: 1.5em;
+	float: left;
+	padding: 0.5em 0 0 10em;
+	width: 70%;
+}
+
+header>.basic-menu>ul {
+	display: inline-block;
+	width: 100%;
+}
+
+header>.basic-menu>ul>li {
+	float: left;
+	text-align: center;
+	line-height: 1.5em;
+	width: 20%;
+}
+
+header>.basic-menu>ul>li>a {
+	text-decoration: none;
+	color: white;
+	font-size: 0.8em;
+	display: inline-block;
+	width: 100%;
+}
+
+header>.search-section {
+	float: left;
+	width: 2em;
+}
+
+header>.search-section>form {
+	float: left;
+	width: 10%;
+}
+
+header>.search-section>form>#searchButton {
+	width: 2em;
+}
+
+header>.search-section > form > #searchBOX {
+	background-color: #1f2324;
+	border: black;
+	width: 0em;
+	position: relative;
+	margin-left: -11.5em;
+	transition: width 1s ease-in-out;
+}
+
+#searchButton:hover+ #searchBOX {
+	background-color: white;
+	border: black;
+	width: 18.8em;
+}
+
+
+header>.search-section>form>#searchBOX:FOCUS {
+	background-color: white;
+	border: black;
+	width: 18.8em;
+}
+
+main {
+	margin-bottom: -3px;
+}
+
+main>.catalog-menu {
+	background-color: #f73b4c;
+	padding: 0 15%;
+}
+
+main>.catalog-menu>ul {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 100%;
+	height: 5em;
+	margin-bottom: -3px;
+}
+
+main>.catalog-menu>ul>li {
+	box-sizing: border-box;
+	float: left;
+	text-align: center;
+	width: 16.5%;
+	line-height: 1.5em;
+}
+
+main>.catalog-menu  a {
+	box-sizing: border-box;
+	text-decoration: none;
+	color: white;
+	font-size: 1em;
+	display: inline-block;
+	width: 100%;
+	height: 5em;
+	font-weight: bolder;
+	padding-top: 2em;
+}
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+	width: 70%;
+	margin: auto;
+}
+
+main > #favorite-movie {
+	color: white;
+	background-image: url("../img/BGsection.jpg");
+	background-size: cover;
+	padding-bottom:2em;
+}
+
+main > #favorite-movie > .favorite-movie-header > h1{
+	font-size: 2em;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 2em 0;
+}
+
+main > #favorite-movie > form >.checkbox {
+	display: inline-block;
+	width: 100%;
+}
+
+main > #favorite-movie >  .favorite-movie-header > p{
+	font-size: 0.8em;
+	text-align: justify;
+	padding: 0 20em;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+main > #favorite-movie > form > .checkbox  > .movieGener{
+	box-sizing:border-box;
+	float: left;
+	width: 25%;
+	padding-left: 5em;
+}
+
+main > #favorite-movie > form > .checkbox > .movieGener > input[type="checkbox"] {
+	opacity: 0.5;
+}
+
+main > #favorite-movie > form > .checkbox > .movieGener > input[type="checkbox"]:CHECKED{
+	box-sizing:border-box;
+	width: 1em;
+	height: 1em;
+	opacity: 1;
+}
+
+main  > #favorite-movie > form > .movie-search-button > input[type="submit"]{
+		display: block;
+	box-sizing: border-box;
+	border-radius: 10em;
+	border: 1px solir white;
+	background-color: #1f2324;
+	color: white;
+	width: 13em;
+	height: 3em;
+	margin: 0 auto;
+}
+
+main > #more-movies{
+	box-sizing:border-box;
+	padding: 0 3.5em 5em 3.5em;
+	margin-bottom: -3px;
+}
+
+main > #more-movies >.header-more-movie > h1 {
+	color: white;
+	font-size: 2em;
+	text-align: center;
+	padding: 2em 0 1em 0;
+}
+
+main > #more-movies > .morem-movies-section {
+	display:inline-block;
+	width: 100%;	
+}
+
+main > #more-movies > .morem-movies-section > article{
+	box-sizing:border-box;
+	float: left;	
+	padding-bottom: 2em;
+	width: 25%;
+}
+main > #more-movies > .morem-movies-section > article > figure > img {
+	display: block;
+	margin: 0 auto;
+	box-shadow: 5px 5px 15px  #f73b4c;
+}
+
+main > #more-movies > .morem-movies-section > article > figure > img:hover{
+	border-radius: 30%;	
+	box-shadow: 5px 10px 50px  #025;
+	animation: moveIMG  1s  ease-in-out ;
+}
+
+@keyframes moveIMG {
+	from { transform:skewY(0deg); }
+    to   { transform:skewY(180deg);}
+	
+}
+main > #more-movies > .morem-movies-section > article > figure > figcaption{
+	padding-top: 1em;
+	text-align: center;
+	color: white;
+}
+
+main > #more-movies > .morem-movies-section > article > figure > figcaption a{
+	color: white;
+	text-decoration: none;
+}
+main > #more-movies > .morem-movies-section > article > figure > figcaption a:hover{
+	color: #f73b4c;
+	font-weight: bolder;
+	color: red;
+}
+
+main > #more-movies > .morem-movies-section > article > figure >p{
+	text-align: center;
+	color: gray;
+}
+
+main > #more-movies > .view-more-button > form > input[type="submit"]{
+	display: block;
+	box-sizing: border-box;
+	border-radius: 10em;
+	border: 1px solir white;
+	background-color: #1f2324;
+	color: white;
+	width: 13em;
+	height: 3em;
+	margin: 0 auto;
+}
+
+#mail-us {
+	background-image: url("../img/BGsection.jpg");
+	background-size: cover;
+	margin-bottom: -3px;
+}
+
+#mail-us > h2 {
+	box-sizing:border-box;
+	text-align: center;
+	font-size: 2em;
+	font-weight: bolder;
+	color: white;
+	padding: 2em 0 1em 0;
+}
+
+#mail-us > form {
+	box-sizing:border-box;
+	display: inline-block;
+	width: 100%;
+	padding: 0 0 5em 0;
+}
+
+#mail-us > form label {
+	box-sizing:border-box;
+	display: block;
+	color: graytext;
+	padding: 0 2em 0 5em;
+}
+
+#mail-us > form > .customer-info {
+	box-sizing:border-box;
+	float: left;
+	width: 50%;
+	padding-bottom: 5em;
+	
+}
+
+#mail-us > form > .customer-info > input[type="text"]{
+	box-sizing:border-box;
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+	background-color: #1f2324;
+	border: #1f2324;
+	color: graytext;		
+}	
+
+#mail-us > form label:hover  {
+	width: 100%;
+	animation: mymove  1s  ease-in-out ;
+}
+
+@keyframes mymove {
+   from {transform:translateY(px) ;}
+   to {transform:translateY(-20px); }
+}
+#mail-us > form > .mail-box {
+	padding: 0 0 3em 0;
+}
+
+#mail-us > form > .mail-box > textarea{
+	box-sizing:border-box;
+	display: block;
+	margin: 0 auto;
+	width: 90%;
+	background-color: #1f2324;
+	border: #1f2324;
+	color: graytext;
+}
+
+#mail-us > form > .mail-button > input[type="submit"] {
+	display: block;
+	box-sizing: border-box;
+	border-radius: 10em;
+	border: 1px solir white;
+	background-color: #1f2324;
+	color: white;
+	width: 13em;
+	height: 3em;
+	margin: 0 auto;
+}
+
+
+
+
+
